@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>我的主页</title>
+  <meta name="description" content="个人网站：作品与博客">
+  <meta name="theme-color" content="#0b0e14">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b4a'/%3E%3Crect x='14' y='20' width='36' height='24' rx='5' fill='%230b0e14'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // 在首屏绘制前应用设置，避免闪烁
+    try {
+      var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t;
+      if (localStorage.getItem('fx') === '0') document.documentElement.dataset.fx = 'off';
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- 开机动画：一台掌机亮屏，屏幕展开铺满整个页面 -->
+  <div id="boot" aria-hidden="true">
+    <div class="device">
+      <div class="device-side">
+        <div class="dpad"><i></i><i></i></div>
+      </div>
+      <div class="device-screen">
+        <div class="boot-logo"><span id="boot-name">HELLO</span><small>PRESS START</small></div>
+      </div>
+      <div class="device-side">
+        <div class="abxy"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主界面 -->
+  <div id="home">
+    <div class="bg" aria-hidden="true">
+      <i class="blob b1"></i><i class="blob b2"></i>
+      <span id="bg-word"></span>
+    </div>
+
+    <header class="topbar">
+      <a class="profile f" href="#/about">
+        <span class="avatar" id="avatar">我</span>
+        <span class="profile-text">
+          <span class="profile-name" id="site-name">我的主页</span>
+          <span class="profile-hi" id="greeting"></span>
+        </span>
+      </a>
+      <div class="status">
+        <a class="sys f" data-open="trophies" data-sec="trophies" href="#/trophies" aria-label="成就">
+          <span class="ico" data-ico="trophy"></span><span class="sys-num" id="trophy-count">0/0</span>
+        </a>
+        <a class="sys f" data-open="settings" data-sec="settings" href="#/settings" aria-label="设置">
+          <span class="ico" data-ico="settings"></span>
+        </a>
+        <span class="datetime"><span id="date"></span><time class="clock" id="clock">--:--</time></span>
+      </div>
+    </header>
+
+    <main class="stage">
+      <p class="tagline" id="tagline"></p>
+      <nav class="rail" id="rail" aria-label="栏目"></nav>
+      <section class="info" id="info" aria-live="polite"></section>
+    </main>
+
+    <footer class="hints" aria-hidden="true">
+      <span><kbd>←</kbd><kbd>→</kbd> 选择</span>
+      <span><kbd>Enter</kbd><i class="pad a">A</i> 进入</span>
+      <span><kbd>Esc</kbd><i class="pad b">B</i> 返回</span>
+      <span><kbd>Q</kbd><kbd>E</kbd> 切换栏目</span>
+    </footer>
+  </div>
+
+  <!-- 展开后的内容页 -->
+  <div id="screen" hidden>
+    <header class="screen-head">
+      <a class="back f" id="back" href="#/">← 返回</a>
+      <nav class="tabs" id="tabs" aria-label="栏目切换"></nav>
+      <span class="screen-title" id="screen-title"></span>
+      <span class="screen-en" id="screen-en"></span>
+      <i class="progress" id="progress"></i>
+    </header>
+    <div class="view" id="view"></div>
+  </div>
+
+  <div id="expander" aria-hidden="true"></div>
+  <div id="toasts" aria-live="polite"></div>
+
+  <noscript><p style="padding:2rem">这个网站需要启用 JavaScript 才能浏览。</p></noscript>
+  <script src="assets/vendor/marked.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

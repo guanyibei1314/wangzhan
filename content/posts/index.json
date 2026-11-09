@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "你好，世界",
+    "date": "2026-11-09",
+    "tags": ["随笔"],
+    "summary": "网站开张的第一篇文章。"
+  },
+  {
+    "slug": "how-to-write",
+    "title": "怎么在这里发文章",
+    "date": "2026-11-08",
+    "tags": ["说明"],
+    "summary": "两步：写一个 Markdown 文件，再在列表里登记一行。"
+  }
+]

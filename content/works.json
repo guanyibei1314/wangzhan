@@ -1,0 +1,27 @@
+[
+  {
+    "id": "this-site",
+    "title": "这个网站",
+    "year": "2026",
+    "tags": ["网页", "设计"],
+    "summary": "一个像游戏机主界面一样展开的个人网站。",
+    "content": "works/this-site.md",
+    "links": [
+      { "label": "查看源码", "url": "https://github.com/guanyibei1314/wangzhan" }
+    ]
+  },
+  {
+    "id": "sample-a",
+    "title": "示例作品 A",
+    "year": "2026",
+    "tags": ["示例"],
+    "summary": "这是占位内容，换成你自己的作品吧。"
+  },
+  {
+    "id": "sample-b",
+    "title": "示例作品 B",
+    "year": "2025",
+    "tags": ["示例"],
+    "summary": "可以加封面图、链接和一篇详细介绍。"
+  }
+]
