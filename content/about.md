@@ -1,11 +1,12 @@
-# 关于我
+![头像](assets/img/avatar.jpg)
 
-你好！这里是自我介绍，打开 `content/about.md` 就能修改。
+# 关忆北
 
-可以写写：
+你好，我是关忆北。
 
-- 你是谁，在哪里
-- 现在在做什么
-- 对什么感兴趣
+这个网站用来放我做的东西和写的文章，会慢慢更新。
 
-> 这一页支持完整的 Markdown 语法。
+## 找到我
+
+- GitHub：[guanyibei1314](https://github.com/guanyibei1314)
+- X：[@wuqian1314](https://x.com/wuqian1314)

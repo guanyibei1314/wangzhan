@@ -1,10 +1,19 @@
 {
-  "name": "我的主页",
-  "avatarText": "我",
+  "name": "关忆北",
+  "avatarText": "关",
+  "avatar": "assets/img/avatar.jpg",
   "bootText": "HELLO",
-  "tagline": "你好，欢迎来玩。这里放着我的作品和文章。",
+  "tagline": "你好，我是关忆北。这里放着我的作品和文章。",
   "links": [
-    { "label": "GitHub", "note": "github.com/guanyibei1314", "url": "https://github.com/guanyibei1314" },
-    { "label": "邮箱", "note": "you@example.com", "url": "mailto:you@example.com" }
+    {
+      "label": "GitHub",
+      "note": "github.com/guanyibei1314",
+      "url": "https://github.com/guanyibei1314"
+    },
+    {
+      "label": "X",
+      "note": "x.com/wuqian1314",
+      "url": "https://x.com/wuqian1314"
+    }
   ]
 }
