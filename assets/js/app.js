@@ -263,7 +263,7 @@
 
   /* ---------- 主界面 ---------- */
   let cur = 0;
-  let siteName = '我的主页';
+  let siteName = '关忆北';
 
   function buildRail() {
     rail.innerHTML = SECTIONS.map((s, i) => `
@@ -612,6 +612,12 @@
       siteName = site.name || siteName;
       $('#site-name').textContent = siteName;
       $('#avatar').textContent = site.avatarText || [...siteName][0];
+      if (site.avatar) { // 有头像图片就用图片，加载失败时保留文字
+        const img = new Image();
+        img.alt = '';
+        img.onload = () => $('#avatar').replaceChildren(img);
+        img.src = site.avatar;
+      }
       $('#tagline').textContent = site.tagline || '';
       const bootName = $('#boot-name');
       if (bootName) bootName.textContent = site.bootText || siteName;

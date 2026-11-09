@@ -35,7 +35,7 @@ python3 -m http.server 8000
 
 | 文件 | 作用 |
 |---|---|
-| `content/site.json` | 网站名字、首页那句话、开机画面文字、「链接」页的链接 |
+| `content/site.json` | 网站名字、头像、首页那句话、开机画面文字、「链接」页的链接 |
 | `content/about.md` | 「关于」页 |
 | `content/works.json` | 作品列表 |
 | `content/works/*.md` | 某件作品的详细介绍（可选） |
